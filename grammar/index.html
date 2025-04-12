@@ -1,1 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grammar - German With Johannes</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <span>German</span>
+      <span>With</span>
+      <span>Johannes</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../grammar/">Grammar</a></li>
+        <li><a href="../vocabulary/">Vocabulary</a></li>
+        <li><a href="../pronunciation/">Pronunciation</a></li>
+        <li><a href="../resources/">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <h1>German Grammar Overview</h1>
+
+    <nav class="toc">
+      <ul>
+        <li>
+          <span class="toggle" onclick="toggleSubList('nouns')"></span><a href="#nouns">1. Nouns</a>
+          <ul id="nouns">
+            <li><a href="#capitalisation">1.1 Capitalisation</a></li>
+            <li><a href="#gender">1.2 Gender</a></li>
+            <li><a href="#compound-nouns">1.3 Compound Nouns</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="toggle" onclick="toggleSubList('articles')"></span><a href="#articles">2. Articles</a>
+          <ul id="articles">
+            <li><a href="#definite-articles">2.1 Definite Articles</a></li>
+            <li><a href="#indefinite-articles">2.2 Indefinite Articles</a></li>
+            <li><a href="#possessive-articles">2.3 Possessive Articles</a></li>
+            <li><a href="#negative-articles">2.4 Negative Articles</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="toggle" onclick="toggleSubList('adjectives')"></span><a href="#adjectives">3. Adjectives</a>
+          <ul id="adjectives">
+            <li><a href="#basic-adjectives">3.1 Basic Adjectives</a></li>
+            <li><a href="#adjective-endings">3.2 Adjective Endings</a></li>
+            <li><a href="#comparison">3.3 Comparison</a></li>
+            <li><a href="#superlative">3.4 Superlative</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="toggle" onclick="toggleSubList('adverbs')"></span><a href="#adverbs">4. Adverbs</a>
+        </li>
+        <li>
+          <span class="toggle" onclick="toggleSubList('verbs')"></span><a href="#verbs">5. Verbs</a>
+          <ul id="verbs">
+            <li><a href="#verb-conjugation">5.1 Verb Conjugation</a>
+              <ul>
+                <li><a href="#regular-verbs">5.1.1 Regular Verbs</a></li>
+                <li><a href="#irregular-verbs">5.1.2 Irregular Verbs</a></li>
+              </ul>
+            </li>
+            <li><a href="#verb-structure">5.2 Verb Structure</a></li>
+            <li><a href="#tekamolo">5.3 Tekamolo</a></li>
+            <li><a href="#modal-verbs">5.4 Modal Verbs</a></li>
+            <li><a href="#nominalisierung">5.5 Nominalisierung</a></li>
+            <li><a href="#separable-verbs">5.6 Separable Verbs</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="toggle" onclick="toggleSubList('likes-dislikes')"></span><a href="#likes-dislikes">6. Expressing Likes and Dislikes</a>
+          <ul id="likes-dislikes">
+            <li><a href="#likes">6.1 Likes</a></li>
+            <li><a href="#preferences">6.2 Preferences</a></li>
+            <li><a href="#favourites">6.3 Favourites</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="toggle" onclick="toggleSubList('prepositions')"></span><a href="#prepositions">7. Prepositions</a>
+          <ul id="prepositions">
+            <li><a href="#nach-in-zu">7.1 nach/in/zu</a></li>
+            <li><a href="#aus-von">7.2 aus/von</a></li>
+            <li><a href="#da-dar-wo-wor">7.3 da-/dar- & wo-/wor-</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="toggle" onclick="toggleSubList('conjunctions')"></span><a href="#conjunctions">8. Conjunctions</a>
+          <ul id="conjunctions">
+            <li><a href="#als-wenn-wann-ob">8.1 als/wenn/wann/ob</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="toggle" onclick="toggleSubList('werden')"></span><a href="#werden">9. Werden</a>
+        </li>
+        <li>
+          <span class="toggle" onclick="toggleSubList('futur-i')"></span><a href="#futur-i">10. Futur I</a>
+        </li>
+        <li>
+          <span class="toggle" onclick="toggleSubList('praeteritum')"></span><a href="#praeteritum">11. Präteritum</a>
+          <ul id="praeteritum">
+            <li><a href="#regular-praeteritum">11.1 Regular Präteritum</a></li>
+            <li><a href="#irregular-praeteritum">11.2 Irregular Präteritum</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="toggle" onclick="toggleSubList('perfekt')"></span><a href="#perfekt">12. Perfekt</a>
+        </li>
+        <li>
+          <span class="toggle" onclick="toggleSubList('plusquamperfekt')"></span><a href="#plusquamperfekt">13. Plusquamperfekt</a>
+        </li>
+        <li>
+          <span class="toggle" onclick="toggleSubList('futur-ii')"></span><a href="#futur-ii">14. Futur II</a>
+        </li>
+        <li>
+          <span class="toggle" onclick="toggleSubList('passive')"></span><a href="#passive">15. Passive</a>
+        </li>
+        <li>
+          <span class="toggle" onclick="toggleSubList('conditional')"></span><a href="#conditional">16. Conditional</a>
+        </li>
+        <li>
+          <span class="toggle" onclick="toggleSubList('imperative')"></span><a href="#imperative">17. Imperative</a>
+        </li>
+        <li>
+          <span class="toggle" onclick="toggleSubList('intro-cases')"></span><a href="#intro-cases">18. Intro to Cases</a>
+          <ul id="intro-cases">
+            <li><a href="#articles-cases">18.1 Articles & Cases</a></li>
+            <li><a href="#adjective-endings-cases">18.2 Adjective Endings & Cases</a></li>
+            <li><a href="#weak-nouns">18.3 Weak Nouns</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="toggle" onclick="toggleSubList('accusative')"></span><a href="#accusative">19. Accusative</a>
+        </li>
+        <li>
+          <span class="toggle" onclick="toggleSubList('dative')"></span><a href="#dative">20. Dative</a>
+        </li>
+        <li>
+          <span class="toggle" onclick="toggleSubList('genitive')"></span><a href="#genitive">21. Genitive</a>
+        </li>
+        <li>
+          <span class="toggle" onclick="toggleSubList('case-specific-prepositions')"></span><a href="#case-specific-prepositions">22. Case-specific Prepositions</a>
+        </li>
+        <li>
+          <span class="toggle" onclick="toggleSubList('possession')"></span><a href="#possession">23. Possession</a>
+        </li>
+        <li>
+          <span class="toggle" onclick="toggleSubList('particles')"></span><a href="#particles">24. Particles</a>
+        </li>
+        <li>
+          <span class="toggle" onclick="toggleSubList('two-part-conjunctions')"></span><a href="#two-part-conjunctions">25. Two-part Conjunctions</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="divider"></div>
+
+    <!-- Placeholder Sections Example -->
+    <section id="nouns">
+      <h2>1. Nouns</h2>
+    </section>
+
+    <section id="capitalisation">
+      <h3>1.1 Capitalisation</h3>
+      <p>Unlike English and most other languages, <span class="highlight-yellow">German capitalizes all nouns</span>, not just names of people and countries, languages etc.</p>
+    </section>
+
+<div class="spacer"></div>
+
+    <section id="gender">
+      <h3>1.2 Gender</h3>
+      <p>German nouns have one of <span class="highlight-yellow">three genders</span> in the singular, masculine <span class="highlight-yellow">(der)</span>, feminine <span class="highlight-yellow">(die)</span>
+, neuter <span class="highlight-yellow">(das)</span> and one in the plural <span class="highlight-yellow">(die)</span>.
+<br><em>der Mann, die Frau, das Kind / die Menschen</em>
+<br>There aren’t many rules as to what gender a noun could have, so they mostly need to simply be memorized. As a general (but not 100% reliable) rule of thumb, if a noun ends in -e, it is most likely feminine. There are, however, plenty of exceptions to this.
+More reliable is the following:
+<br>-er endings for people or things that come from verbs are usually masculine (-dor ending in PT/ES), der Computer, der Drucker, der Lehrer
+<br>-ung/-heit and -keit endings for German nouns usually mean it’s feminine 
+<br>-tion and -tät endings for foreign loan words also mean the word is feminine
+<br>-chen and -lein (diminutive) are always neuter, das
+</p>
+<table>
+    <tr>
+      <th>Case</th>
+      <th>Masculine<br>der</th>
+      <th>Feminine<br>die</th>
+      <th>Neuter<br>das</th>
+    </tr>
+    <tr>
+      <td>Common Endings</td>
+      <td>
+        <ul>
+          <li>-er (from verbs)</li>
+          <li>-or</li>
+          <li>-ling</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>-e (often)</li>
+          <li>-ung</li>
+          <li>-heit / -keit</li>
+          <li>-tion / -tät</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>-chen</li>
+          <li>-lein</li>
+          <li>-ment</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Examples</td>
+      <td>
+        <ul>
+          <li>der Lehrer</li>
+          <li>der Drucker</li>
+          <li>der Motor</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>die Blume</li>
+          <li>die Freiheit</li>
+          <li>die Nation</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>das Mädchen</li>
+          <li>das Instrument</li>
+          <li>das Fräulein</li>
+        </ul>
+      </td>
+    </tr>
+  </table>  
+    </section>
+
+    <section id="Placeholder">
+        <h1></h1>
+        <p>More content following soon.</p>
+      </section>
+
+    <!-- Continue sections as needed... -->
+  </main>
+
+  <script>
+    // Function to toggle visibility of sub-lists
+    function toggleSubList(id) {
+      const subList = document.getElementById(id);
+      const toggleIcon = subList.previousElementSibling;
+
+      // Toggle the display of the sub-list
+      if (subList.style.display === 'block') {
+        subList.style.display = 'none';
+        toggleIcon.style.transform = 'rotate(0deg)';
+      } else {
+        subList.style.display = 'block';
+        toggleIcon.style.transform = 'rotate(180deg)';
+      }
+    }
+  </script>
+</body>
+</html>
