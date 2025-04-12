@@ -1,0 +1,188 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+  width: 100%;
+  background-color: #111;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem; /* tighter vertical padding */
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.3rem;
+  line-height: 1.1; /* tighter spacing */
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #66ccff;
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.intro {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.intro h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+}
+
+/* Table of Contents Styles */
+.toc {
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  margin: 0 auto;
+}
+
+.toc ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.toc li {
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+}
+
+.toc a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
+
+.toc a:active {
+  color: #005fa3;
+}
+
+.back-to-top {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.back-to-top:hover {
+  text-decoration: underline;
+}
+
+/* Triangle icon */
+.toggle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #0077cc;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+/* Hide sub-lists initially */
+.toc ul ul {
+  display: none;
+  padding-left: 1.5rem;
+}
+
+/* Indentation of sub-points */
+.toc ul ul ul {
+  padding-left: 1.8rem;
+}
+
+/* Optional styling for bullets on sub-lists */
+.toc ul ul {
+  list-style-type: disc;
+}
+
+.toc ul ul ul {
+  list-style-type: circle;
+}
+
+.highlight-red {
+  color: #d00;
+  font-weight: bold;
+}
+
+.highlight-blue {
+  color: #005fdd;
+  font-weight: bold;
+}
+
+.highlight-green {
+  color: #009966;
+  font-weight: bold;
+}
+
+.highlight-yellow {
+  background-color: #fff3b0;
+  padding: 0 4px;
+  border-radius: 3px;
+}
+
+.divider {
+  margin: 2rem 0;
+  border-top: 1px solid #ccc;
+  width: 100%;
+}
