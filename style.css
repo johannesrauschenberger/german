@@ -257,3 +257,15 @@ table li {
     grid-template-columns: 1fr;
   }
 }
+
+.exercise {
+  display: inline-block;
+  margin-bottom: 1em;
+  font-weight: 500;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.exercise:hover {
+  text-decoration: underline;
+}
