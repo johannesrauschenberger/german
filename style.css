@@ -225,3 +225,35 @@ table li {
 .spacer {
   margin-top: 2rem;
 }
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.two-columns h3 {
+  margin-bottom: 0.5rem;
+}
+
+.two-columns p {
+  margin-bottom: 0.75rem;
+}
+
+.two-columns a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.two-columns a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .two-columns {
+    grid-template-columns: 1fr;
+  }
+}
